@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Elizabeth Cuba Mestre – Student at Yale University</title>
-  <meta name="description" content="Elizabeth is a student at Yale studying Computer Science and Economics, while pursuing certificates in Data Science and Quantum Science and Engineering. See projects, experience, and contact info.">
+  <title>Elizabeth Cuba Mestre – CS and Economics at Yale</title>
+  <meta name="description" content="Elizabeth is a Yale student studying Computer Science and Economics. See research, engineering, and leadership experience.">
   <style>
+    /* ---------- Theme: edit these colors to restyle the whole site ---------- */
     :root {
       --bg: #ffffff;
       --surface: #f3f5f8;
@@ -104,7 +105,7 @@
 
   <header class="nav">
     <div class="wrap">
-      <a class="brand" href="#top">Your Name</a>
+      <a class="brand" href="#top">Elizabeth Cuba Mestre</a>
       <nav aria-label="Main">
         <ul>
           <li><a href="#experience">Experience</a></li>
@@ -120,45 +121,89 @@
 
     <!-- ========== HERO ========== -->
     <div class="hero">
-      <h1>Elizabeth Cuba Mestre</h1>
-      <p class="role">Software engineer. Backend and full-stack.</p>
+      <h1>Your Name</h1>
+      <p class="role">Computer Science and Economics at Yale</p>
       <p class="lede">
-        I build reliable web services and the tools around them. I'm looking for a new-grad / SWE role
-        where I can work on products used by real people. Currently finishing a B.S. in Computer Science at Your University.
+        I build software that starts from a real-world problem: eye-tracking tools for a neuroscience lab,
+        the CAN network for a student-built race car, and a website that doubled FAFSA completion at my high school.
+        I'm interested in financial technology, data analytics, and technology that helps people.
+        I'm looking for software engineering internships.
       </p>
       <div class="actions">
-        <a class="btn primary" href="mailto:you@example.com">Email me</a>
+        <a class="btn primary" href="mailto:you@yale.edu">Email me</a>
         <a class="btn" href="resume.pdf">Download résumé</a>
-        <a class="btn" href="https://github.com/your-username">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/your-username">LinkedIn</a>
+        <a class="btn" href="https://github.com/elizabeth-cubamestre">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/elizabeth-cuba-mestre-b80673385/">LinkedIn</a>
       </div>
     </div>
+
+    <!-- ========== EDUCATION ========== -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="job">
+        <div class="when">Expected May 2029</div>
+        <div>
+          <h3>Yale University</h3>
+          <div class="muted">B.S. in Computer Science and Economics · New Haven, CT</div>
+          <p style="margin-top:0.6rem">Coursework: Data Structures and Programming Techniques, Mathematical Tools for Computer Science, Probability and Statistics Intensive, Intermediate Microeconomics, Introduction to Engineering, Innovation, and Design</p>
+        </div>
+      </div>
+    </section>
 
     <!-- ========== EXPERIENCE ========== -->
     <section id="experience">
       <h2>Experience</h2>
 
       <div class="job">
-        <div class="when">Jun 2025 – Aug 2025</div>
+        <div class="when">Aug 2026 – Present</div>
         <div>
-          <h3>Software Engineering Intern, Company Name</h3>
-          <div class="muted">City, ST</div>
+          <h3>Undergraduate Researcher, Courage Lab</h3>
+          <div class="muted">Yale School of Medicine · New Haven, CT</div>
           <ul>
-            <li>Built a REST endpoint in Go that cut report generation time from 12s to 2s for 40k+ users.</li>
-            <li>Added integration tests that raised coverage on the billing service from 55% to 85%.</li>
-            <li>Shipped a feature behind a flag and monitored the rollout with Datadog dashboards.</li>
+            <li>Independently developing an eye-tracking system, choosing the approach for hardware integration, gaze-data collection, and experimental task implementation.</li>
+            <li>Built an initial task that establishes reliable eye tracking and data collection, a base for future studies on anxiety, expectations, and decision-making.</li>
+            <li>Turn open-ended cognitive neuroscience questions into software requirements, then test the system iteratively for reliable experimental use.</li>
           </ul>
         </div>
       </div>
 
       <div class="job">
-        <div class="when">Sep 2024 – May 2025</div>
+        <div class="when">Apr 2026 – Present</div>
         <div>
-          <h3>Teaching Assistant, Data Structures</h3>
-          <div class="muted">Your University</div>
+          <h3>Outreach Chair, Yale ColorStack</h3>
+          <div class="muted">New Haven, CT</div>
           <ul>
-            <li>Held weekly office hours and led review sessions for 150+ students.</li>
-            <li>Wrote and maintained autograder tests in Python.</li>
+            <li>Lead external outreach for a 100+ member organization, building relationships with recruiters, engineers, researchers, and corporate partners.</li>
+            <li>Organize office visits, career panels, workshops, and recruiting events with professionals from Jane Street, Google, Duolingo, and Y Combinator.</li>
+            <li>Run cold outreach and manage partner relationships, coordinating timelines and logistics with external contacts and student leadership.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="when">Aug 2025 – Present</div>
+        <div>
+          <h3>Low Voltage Member, Yale Bulldogs Racing</h3>
+          <div class="muted">New Haven, CT</div>
+          <ul>
+            <li>Develop the low-voltage systems that connect the vehicle's components to the driver over a decentralized CAN bus network.</li>
+            <li>Integrate the pedal box, dashboard, motor controller, BMS, cooling system, and watchdog into the CAN network.</li>
+            <li>Improved reliability and debuggability compared with a centralized onboard-computer design.</li>
+            <li>Contributed to dashboard design, including layout, driver information display, and switch selection.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="when">Aug 2024 – May 2025</div>
+        <div>
+          <h3>FAFSA Peer Coach, Arizona Board of Regents</h3>
+          <div class="muted">Mesa, AZ</div>
+          <ul>
+            <li>Raised senior FAFSA completion from 23% to 52%, beating the program's 50% goal, through outreach, workshops, and one-on-one support.</li>
+            <li>Coordinated FAFSA workshops, college visits, and career events with representatives from ASU, NAU, GCU, MCC, ERAU, and other institutions.</li>
+            <li>Explained financial-aid rules to students, parents, and staff in presentations, email, and phone calls, adjusting the message for each audience.</li>
+            <li>Built a website and email support system that gathered FAFSA resources, answered common questions, and connected students with help.</li>
           </ul>
         </div>
       </div>
@@ -169,24 +214,24 @@
       <h2>Projects</h2>
 
       <article class="project">
-        <h3>Project One</h3>
-        <div class="links"><a href="https://github.com/your-username/project-one">Code</a><a href="https://example.com">Live demo</a></div>
-        <p>One or two sentences: what it does, who it's for, and one result (users, speed, scale). Recruiters skim, so lead with the outcome.</p>
-        <ul class="tags"><li>TypeScript</li><li>React</li><li>Node.js</li><li>PostgreSQL</li></ul>
+        <h3>Eye-tracking research platform</h3>
+        <div class="links"><a href="#">Write-up</a></div>
+        <p>Software for the Courage Lab that records gaze data during experimental tasks. It gives researchers a reliable way to study anxiety and decision-making.</p>
+        <ul class="tags"><li>Eye tracking</li><li>Data collection</li><li>Research software</li></ul>
       </article>
 
       <article class="project">
-        <h3>Project Two</h3>
-        <div class="links"><a href="https://github.com/your-username/project-two">Code</a></div>
-        <p>Describe the problem you solved and a technical decision you're proud of, such as caching, concurrency, or a tricky algorithm.</p>
-        <ul class="tags"><li>Python</li><li>FastAPI</li><li>Docker</li><li>Redis</li></ul>
+        <h3>Race car CAN bus network</h3>
+        <div class="links"><a href="#">Write-up</a></div>
+        <p>A decentralized CAN network that links the pedal box, dashboard, motor controller, BMS, cooling system, and watchdog on Yale's electric race car.</p>
+        <ul class="tags"><li>CAN bus</li><li>Embedded systems</li><li>Hardware integration</li></ul>
       </article>
 
       <article class="project">
-        <h3>Project Three</h3>
-        <div class="links"><a href="https://github.com/your-username/project-three">Code</a></div>
-        <p>Keep to three to five projects. Pick the ones with a clean README and working code.</p>
-        <ul class="tags"><li>Go</li><li>gRPC</li><li>Kubernetes</li></ul>
+        <h3>FAFSA support website</h3>
+        <div class="links"><a href="#">Code</a><a href="#">Live site</a></div>
+        <p>A website and email system that put FAFSA resources in one place for students. It was part of the effort that raised senior completion from 23% to 52%.</p>
+        <ul class="tags"><li>Web</li><li>Email automation</li></ul>
       </article>
     </section>
 
@@ -194,30 +239,18 @@
     <section id="skills">
       <h2>Skills</h2>
       <dl class="skills">
-        <dt>Languages</dt><dd>Python, Go, TypeScript, Java, SQL</dd>
-        <dt>Web</dt><dd>React, Node.js, FastAPI, REST, GraphQL</dd>
-        <dt>Data</dt><dd>PostgreSQL, Redis, MongoDB</dd>
-        <dt>Tools</dt><dd>Git, Docker, GitHub Actions, AWS, Linux</dd>
+        <dt>Programming</dt><dd>C, Python, R, JavaScript, HTML/CSS, Racket</dd>
+        <dt>Frameworks and tools</dt><dd>Flask, Pytest, Git/GitHub, CAD, Microsoft Excel</dd>
+        <dt>Spoken languages</dt><dd>English, Spanish</dd>
+        <dt>Interests</dt><dd>Financial technology, data analytics, technology strategy, technology and education, social impact</dd>
       </dl>
-    </section>
-
-    <!-- ========== EDUCATION ========== -->
-    <section id="education">
-      <h2>Education</h2>
-      <div class="job">
-        <div class="when">2022 – 2026</div>
-        <div>
-          <h3>B.S. in Computer Science, Your University</h3>
-          <div class="muted">GPA 3.8 · Relevant courses: Algorithms, Operating Systems, Databases, Distributed Systems</div>
-        </div>
-      </div>
     </section>
 
     <!-- ========== CONTACT ========== -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>The best way to reach me is email: <a href="mailto:you@example.com">ecuba1345@gmail.com</a>.</p>
-      <p class="muted">You can also find me on <a href="https://github.com/elizabeth-cubamestre">GitHub</a> and <a href="https://www.linkedin.com/in/elizabeth-cuba-mestre-b80673385/">LinkedIn</a>.</p>
+      <p>The best way to reach me is email: <a href="mailto:elizabeth.cubamestre@yale.edu">elizabeth.cubamestre@yale.edu</a>.</p>
+      <p class="muted">You can also find me on <a href="https://github.com/elizabeth-cubamestre">GitHub</a> and <a href="linkedin.com/in/elizabeth-cuba-mestre-b80673385/">LinkedIn</a>.</p>
     </section>
 
   </main>
