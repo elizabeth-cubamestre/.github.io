@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Elizabeth Cuba Mestre – CS and Economics at Yale</title>
-  <meta name="description" content="Elizabeth is a Yale student studying Computer Science and Economics. See research, engineering, and leadership experience.">
+  <meta name="description" content="Your Name is a Yale student studying Computer Science and Economics. See research, engineering, and leadership experience.">
   <style>
     /* ---------- Theme: edit these colors to restyle the whole site ---------- */
     :root {
@@ -69,6 +69,16 @@
     .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
     @media (prefers-color-scheme: dark) { .btn.primary { color: #0b1220; } }
 
+
+    /* ---------- Images ---------- */
+    .hero-top { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.25rem; }
+    .hero-top h1 { margin-bottom: 0.4rem; }
+    .hero-top .role { margin: 0; }
+    .pfp { width: 112px; height: 112px; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); flex: none; }
+    .org { display: flex; align-items: center; gap: 0.9rem; }
+    .logo { width: 44px; height: 44px; object-fit: contain; background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 4px; flex: none; }
+    @media (max-width: 600px) { .pfp { width: 84px; height: 84px; } }
+
     /* ---------- Sections ---------- */
     section { padding: 2.5rem 0; border-top: 1px solid var(--line); }
     h2 { font-size: 1.5rem; margin: 0 0 1.5rem; letter-spacing: -0.01em; }
@@ -121,11 +131,16 @@
 
     <!-- ========== HERO ========== -->
     <div class="hero">
-      <h1>Elizabeth Cuba Mestre</h1>
-      <p class="role">Computer Science and Economics at Yale</p>
+      <div class="hero-top">
+        <img class="pfp" src="assets/profile.jpg" alt="Photo of Elizabeth" width="112" height="112" onerror="this.remove()">
+        <div>
+          <h1>Elizabeth Cuba Mestre</h1>
+          <p class="role">Computer Science and Economics at Yale</p>
+        </div>
+      </div>
       <p class="lede">
         I build software that starts from a real-world problem: eye-tracking tools for a neuroscience lab,
-        the CAN network for a student-built race car, and a website that doubled FAFSA completion at my high school.
+        the CAN network for a student-built race car, and a support system that doubled FAFSA completion at my high school.
         I'm interested in financial technology, data analytics, and technology that helps people.
         I'm looking for software engineering internships.
       </p>
@@ -133,7 +148,7 @@
         <a class="btn primary" href="mailto:elizabeth.cubamestre@yale.edu">Email me</a>
         <a class="btn" href="resume.pdf">Download résumé</a>
         <a class="btn" href="https://github.com/elizabeth-cubamestre">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/elizabeth-cuba-mestre-b80673385/">LinkedIn</a>
+        <a class="btn" href="linkedin.com/in/elizabeth-cuba-mestre-b80673385/">LinkedIn</a>
       </div>
     </div>
 
@@ -143,8 +158,13 @@
       <div class="job">
         <div class="when">Expected May 2029</div>
         <div>
-          <h3>Yale University</h3>
-          <div class="muted">B.S. in Computer Science and Economics · New Haven, CT</div>
+          <div class="org">
+            <img class="logo" src="assets/yale.png" alt="" width="44" height="44" onerror="this.remove()">
+            <div>
+              <h3>Yale University</h3>
+              <div class="muted">B.S. in Computer Science and Economics · New Haven, CT</div>
+            </div>
+          </div>
           <p style="margin-top:0.6rem">Coursework: Data Structures and Programming Techniques, Mathematical Tools for Computer Science, Probability and Statistics Intensive, Intermediate Microeconomics, Introduction to Engineering, Innovation, and Design</p>
         </div>
       </div>
@@ -157,8 +177,13 @@
       <div class="job">
         <div class="when">Aug 2026 – Present</div>
         <div>
-          <h3>Undergraduate Researcher, Courage Lab</h3>
-          <div class="muted">Yale School of Medicine · New Haven, CT</div>
+          <div class="org">
+            <img class="logo" src="assets/yale-medicine.png" alt="" width="44" height="44" onerror="this.remove()">
+            <div>
+              <h3>Undergraduate Researcher, Courage Lab</h3>
+              <div class="muted">Yale School of Medicine · New Haven, CT</div>
+            </div>
+          </div>
           <ul>
             <li>Independently developing an eye-tracking system, choosing the approach for hardware integration, gaze-data collection, and experimental task implementation.</li>
             <li>Built an initial task that establishes reliable eye tracking and data collection, a base for future studies on anxiety, expectations, and decision-making.</li>
@@ -170,8 +195,13 @@
       <div class="job">
         <div class="when">Apr 2026 – Present</div>
         <div>
-          <h3>Outreach Chair, Yale ColorStack</h3>
-          <div class="muted">New Haven, CT</div>
+          <div class="org">
+            <img class="logo" src="assets/colorstack.png" alt="" width="44" height="44" onerror="this.remove()">
+            <div>
+              <h3>Outreach Chair, Yale ColorStack</h3>
+              <div class="muted">New Haven, CT</div>
+            </div>
+          </div>
           <ul>
             <li>Lead external outreach for a 100+ member organization, building relationships with recruiters, engineers, researchers, and corporate partners.</li>
             <li>Organize office visits, career panels, workshops, and recruiting events with professionals from Jane Street, Google, Duolingo, and Y Combinator.</li>
@@ -183,8 +213,13 @@
       <div class="job">
         <div class="when">Aug 2025 – Present</div>
         <div>
-          <h3>Low Voltage Member, Yale Bulldogs Racing</h3>
-          <div class="muted">New Haven, CT</div>
+          <div class="org">
+            <img class="logo" src="assets/bulldogs-racing.png" alt="" width="44" height="44" onerror="this.remove()">
+            <div>
+              <h3>Low Voltage Member, Yale Bulldogs Racing</h3>
+              <div class="muted">New Haven, CT</div>
+            </div>
+          </div>
           <ul>
             <li>Develop the low-voltage systems that connect the vehicle's components to the driver over a decentralized CAN bus network.</li>
             <li>Integrate the pedal box, dashboard, motor controller, BMS, cooling system, and watchdog into the CAN network.</li>
@@ -197,8 +232,13 @@
       <div class="job">
         <div class="when">Aug 2024 – May 2025</div>
         <div>
-          <h3>FAFSA Peer Coach, Arizona Board of Regents</h3>
-          <div class="muted">Mesa, AZ</div>
+          <div class="org">
+            <img class="logo" src="assets/arizona-regents.png" alt="" width="44" height="44" onerror="this.remove()">
+            <div>
+              <h3>FAFSA Peer Coach, Arizona Board of Regents</h3>
+              <div class="muted">Mesa, AZ</div>
+            </div>
+          </div>
           <ul>
             <li>Raised senior FAFSA completion from 23% to 52%, beating the program's 50% goal, through outreach, workshops, and one-on-one support.</li>
             <li>Coordinated FAFSA workshops, college visits, and career events with representatives from ASU, NAU, GCU, MCC, ERAU, and other institutions.</li>
@@ -229,7 +269,7 @@
 
       <article class="project">
         <h3>FAFSA support website</h3>
-        <div class="links"><a href="#">Code</a><a href="#">Live site</a></div>
+        <div class="links"><a href="https://github.com/elizabeth-cubamestre/fafsa-financial-aid-helper">Code</a><a href="https://your-fafsa-app.example.com">Live site</a></div>
         <p>A website and email system that put FAFSA resources in one place for students. It was part of the effort that raised senior completion from 23% to 52%.</p>
         <ul class="tags"><li>Web</li><li>Email automation</li></ul>
       </article>
